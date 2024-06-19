@@ -20,9 +20,17 @@ const Navbar = () => {
     <div className="  fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#fff] text-[#333] font-bold z-50">
       <div>
         {/* <img src={Logo} alt='Logo Image' style={{ width: '200px' }} /> */}
-        <h1 className="text-2xl sm:text-2xl font-bold  cursor-pointer">
-          Mahesh Gaikwad
-        </h1>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="hover:underline hover:decoration-white"
+        >
+          {" "}
+          <h1 className="text-2xl sm:text-2xl font-bold  cursor-pointer">
+            Mahesh Gaikwad
+          </h1>
+        </Link>
       </div>
 
       {/* menu */}
@@ -67,7 +75,7 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             to="contact"
             smooth={true}
@@ -76,7 +84,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       {/* Hamburger */}
@@ -168,10 +176,10 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#fff]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="/mailTo:mahesh001.mg@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
